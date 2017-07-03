@@ -1,0 +1,15 @@
+Movie Database Project for MacRail 
+
+01/07/2017
+
+Started looking at what server and stack I will start to use.
+Decided on WAMPServer because that's what Lynda.com(where I'm
+learning PHP from) is using.
+
+03/07
+
+Gone through some basic WAMP stuff, installed everything
+and created a simple hello world program to test it, and it
+works. Skipped the general PHP learning process to MySQL
+to set up the database. Just refreshing things from a web
+project I did before. 
