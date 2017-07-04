@@ -1,4 +1,4 @@
-Movie Database Project for MacRail 
+Movie Database Project for MacRail
 
 01/07/2017
 
@@ -12,4 +12,13 @@ Gone through some basic WAMP stuff, installed everything
 and created a simple hello world program to test it, and it
 works. Skipped the general PHP learning process to MySQL
 to set up the database. Just refreshing things from a web
-project I did before. 
+project I did before.
+
+04/07
+
+Ideas:
+create a login for a admin to add or change movies in the Database
+create a login for normal uses who can search for movies and add comments
+JQuery, AJAX, CSS. but don't waste time on CSS
+
+To be able to see what films certain actors are in
