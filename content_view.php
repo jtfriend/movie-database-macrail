@@ -15,28 +15,26 @@
 <?php include("/includes/header.php"); ?>
     <div id = "main">
       <div id = "navigation">
+        <ul>
+          <li><a href="manage_content.php">Manage Movies</a></li>
+        </ul>
+      </div>
+      <div id = "page">
+        <h2>Admin Menu</h2>
         <?php
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           // 3. Use returned data
           while($row = mysqli_fetch_assoc($result))
           {
              //echo $row["id"] . "<br />";
-             //echo $row["title"] . "<br />";
-             //echo $row["genre"] . "<br />";
-             //echo $row["age_rating"] . "<br />";
-             //echo "<hr />";
+             echo $row["title"] . "<br />";
+             echo $row["genre"] . "<br />";
+             echo $row["age_rating"] . "<br />";
+             echo "<hr />";
           }
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         ?>
 
-      </div>
-      <div id = "page">
-        <h2>Admin Menu</h2>
-        <ul>
-          <li><a href="manage_content.php">Manage Movies</a></li>
-          <li><a href="manage_admin.php">Manage Admin</a></li>
-          <li><a href="logout.php">Logout</a></li>
-        </ul>
       </div>
     </div>
     <?php

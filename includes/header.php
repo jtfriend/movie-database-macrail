@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Admin</title>
+    <title>Movie Database</title>
     <link href = "CSS/public.css" media= "all" rel = "stylesheet"
     type = text/css />
   </head>
