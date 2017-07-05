@@ -22,3 +22,11 @@ create a login for normal uses who can search for movies and add comments
 JQuery, AJAX, CSS. but don't waste time on CSS
 
 To be able to see what films certain actors are in
+
+05/07
+
+Created add and edit functionality to the website, questioning now how
+much time I have left to complete the project within the deadline.
+Making good use of git and happy with how it's going. Hoping that not
+having a search feature won't hamper me too much. Hope to complete remove
+and login functionality tomorrow.

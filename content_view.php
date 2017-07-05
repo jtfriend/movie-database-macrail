@@ -18,21 +18,30 @@ $result = findAllMovies();
         </ul>
       </div>
       <div id = "page">
-        <h2>Admin Menu</h2>
+        <h2>Movies</h2>
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Age Rating</th>
+          </tr>
+          <tr>
         <?php
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           // 3. Use returned data
           while($row = mysqli_fetch_assoc($result))
           {
-             //echo $row["id"] . "<br />";
-             echo $row["title"] . "<br />";
-             echo $row["genre"] . "<br />";
-             echo $row["age_rating"] . "<br />";
-             echo "<hr />";
+            ?>
+
+                <td><?php echo $row["title"] . "<br />";?></td>
+                <td><?php echo $row["genre"] . "<br />";?></td>
+                <td><?php echo $row["age_rating"] . "<br />";?></td>
+              </tr>
+        <?php
           }
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         ?>
-
+      </table>
       </div>
     </div>
     <?php
