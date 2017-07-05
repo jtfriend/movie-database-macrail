@@ -15,6 +15,9 @@
 <?php include("/includes/header.php"); ?>
     <div id = "main">
       <div id = "navigation">
+        <ul>
+          <li><a href="manage_content.php">Manage Movies</a></li>
+        </ul>
         <?php
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           // 3. Use returned data
@@ -31,12 +34,13 @@
 
       </div>
       <div id = "page">
-        <h2>Admin Menu</h2>
-        <ul>
-          <li><a href="manage_content.php">Manage Movies</a></li>
-          <li><a href="manage_admin.php">Manage Admin</a></li>
-          <li><a href="logout.php">Logout</a></li>
-        </ul>
+        <h2>Add Movie</h2>
+        <form action="content_added.php" method ="post">
+          Title: <input type="text" name="title"><br>
+          Genre: <input type="text" name="genre"><br>
+          Age Rating: <input type="text" name="age_rating"><br>
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </div>
     <?php

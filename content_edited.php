@@ -21,6 +21,14 @@
         <?php
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           // 3. Use returned data
+          while($row = mysqli_fetch_assoc($result))
+          {
+             //echo $row["id"] . "<br />";
+             //echo $row["title"] . "<br />";
+             //echo $row["genre"] . "<br />";
+             //echo $row["age_rating"] . "<br />";
+             //echo "<hr />";
+          }
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         ?>
 
@@ -46,7 +54,7 @@
                         document.getElementById("txtHint").innerHTML = this.responseText;
                     }
                 };
-                xmlhttp.open("GET","getfilms.php?title="+str,true);
+                xmlhttp.open("GET","getuser.php?q="+str,true);
                 xmlhttp.send();
             }
         }
@@ -56,15 +64,14 @@
 
         <form>
         <select name="users" onchange="showUser(this.value)">
-          <option value="">Select a movie</option>
-          <?php
-          while ($row = $result->fetch_assoc()) {
-            echo "<option value='" . $row['title'] ."'>" . $row['title'] ."</option>";
-          }
-          ?>
-        </select>
-
+          <option value="">Select a person:</option>
+          <option value="1">Peter Griffin</option>
+          <option value="2">Lois Griffin</option>
+          <option value="3">Joseph Swanson</option>
+          <option value="4">Glenn Quagmire</option>
+          </select>
         </form>
+        <br>
         <div id="txtHint"><b>Person info will be listed here...</b></div>
       </div>
     </div>

@@ -5,10 +5,8 @@
 <?php
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 2.Database Query
-  $query = "SELECT * FROM movies";
-  $result = mysqli_query($mysqli, $query);
-  // Test if there is Database
-  confirmQuery($result);
+$result = findAllMovies();
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ?>
 

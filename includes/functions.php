@@ -12,4 +12,14 @@
       echo "<br />";
     }
   }
+
+  function findAllMovies()
+  {
+    global $mysqli;
+    $query = "SELECT * FROM movies";
+    $result = mysqli_query($mysqli, $query);
+    // Test if there is Database
+    confirmQuery($result);
+    return $result;
+  }
 ?>
