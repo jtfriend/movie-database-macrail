@@ -9,7 +9,7 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 2.Database Query
 
-  $query = "INSERT INTO movies  FROM movies"; //TO DO: Update~~~~~~~~
+
   $id = $_POST["id"];
   $title = $_POST["title"];
   $genre = $_POST["genre"];

@@ -33,11 +33,11 @@ while($row = mysqli_fetch_array($result)) {
 }
 ?>
 <form action="content_removed.php" method ="post">
-  Title: <input type="text" name="title" value ="<?php echo $title?>"><br>
-  Genre: <input type="text" name="genre" value ="<?php echo $genre?>"><br>
-  Age Rating: <input type="text" name="age_rating" value ="<?php echo $age_rating?>"><br>
+  Title: <input type="text" name="title" value ="<?php echo $title?>" disabled><br>
+  Genre: <input type="text" name="genre" value ="<?php echo $genre?>" disabled><br>
+  Age Rating: <input type="text" name="age_rating" value ="<?php echo $age_rating?>" disabled><br>
   <input type="hidden" name="id" value ="<?php echo $id?>"><br>
-  <input type="submit" value="Remove movie">
+  <input type="submit" value="Delete movie">
 </form>
 
 </body>

@@ -36,9 +36,9 @@
       <div id = "page">
         <h2>Add Movie</h2>
         <form action="content_added.php" method ="post">
-          Title: <input type="text" name="title"><br>
-          Genre: <input type="text" name="genre"><br>
-          Age Rating: <input type="text" name="age_rating"><br>
+          Title: <input type="text" name="title" required><br>
+          Genre: <input type="text" name="genre" required><br>
+          Age Rating: <input type="number" name="age_rating" required><br>
           <input type="submit" value="Submit">
         </form>
       </div>

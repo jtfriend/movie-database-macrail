@@ -1,4 +1,9 @@
 <?php
+  function redirect_to($new_location)
+  {
+    header("Location: " . $new_location);
+    exit;
+  }
 
   function confirmQuery($result_set)
   {
@@ -8,8 +13,8 @@
     }
     else
     {
-      echo (", Database query passed!");
-      echo "<br />";
+      //echo (", Database query passed!");
+      //echo "<br />";
     }
   }
 
@@ -22,4 +27,6 @@
     confirmQuery($result);
     return $result;
   }
+
+
 ?>

@@ -30,3 +30,12 @@ much time I have left to complete the project within the deadline.
 Making good use of git and happy with how it's going. Hoping that not
 having a search feature won't hamper me too much. Hope to complete remove
 and login functionality tomorrow.
+
+
+06/ 07
+
+Started over writing some good files I wrote for another part of the system.
+Not good. Amended now but not great when time is a large factor.
+Learnt about redirection with headers and output buffering and how you can't
+have white space before it or have output buffering on.
+Created the admin CRUD. 

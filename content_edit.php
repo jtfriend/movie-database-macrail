@@ -26,7 +26,7 @@
 
       </div>
       <div id = "page">
-        <h2>Edit Movie</h2>
+        <h2>Edit</h2>
         <head>
         <script>
         function showUser(str) {
@@ -53,7 +53,6 @@
         </script>
         </head>
         <body>
-
         <form>
         <select name="users" onchange="showUser(this.value)">
           <option value="">Select a movie</option>
@@ -65,7 +64,7 @@
         </select>
 
         </form>
-        <div id="txtHint"><b>Person info will be listed here...</b></div>
+        <div id="txtHint"><b></b></div>
       </div>
     </div>
     <?php

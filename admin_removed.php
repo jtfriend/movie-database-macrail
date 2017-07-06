@@ -9,14 +9,14 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // 2.Database Query
 
-  $title = $_POST["title"];
-  $genre = $_POST["genre"];
-  $age_rating = $_POST["age_rating"];
-  $title = mysqli_real_escape_string($mysqli, $title);
-  $genre = mysqli_real_escape_string($mysqli, $genre);
+  $username = $_POST["username"];
+  $password = $_POST["password"];
+  $id = $_POST["id"];
+  $username = mysqli_real_escape_string($mysqli, $username);
+  $password = mysqli_real_escape_string($mysqli, $password);
 
-  $query = "INSERT INTO movies (title, genre, age_rating)
-            VALUES ('{$title}', '{$genre}', '{$age_rating}')";
+  $query = "DELETE FROM movies
+            WHERE id =  {$id} LIMIT 1";
   $result = mysqli_query($mysqli, $query);
   // Test if there is Database
   confirmQuery($result);
@@ -27,13 +27,13 @@
     <div id = "main">
       <div id = "navigation">
         <ul>
-          <li><a href="manage_content.php">Manage Movies</a></li>
+          <li><a href="manage_admin.php">Manage Admin</a></li>
         </ul>
 
       </div>
       <div id = "page">
-        <h2>Added Movie</h2>
-        Added <?php echo $_POST["title"]; ?><br>
+        <h2>Added Admin</h2>
+        Added <?php echo $_POST["username"]; ?><br>
       </div>
     </div>
 <?php include("/includes/footer.php"); ?>

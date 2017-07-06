@@ -19,6 +19,14 @@ img { border: none; }
 a { color: #8D0D19; }
 a:hover { color: #1A446C; }
 
+
+form {
+     display:inline;
+     margin:0px;
+     padding:0px;
+}
+
+
 #header {
 	height: 70px;
 	margin: 0; padding: 0; text-align: left;
