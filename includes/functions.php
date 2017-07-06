@@ -28,5 +28,19 @@
     return $result;
   }
 
+  function passwordEncrypt($password_text)
+  {
+    //blow fish 2y, 10 number of times
+    $hash_format = "$2y$10$";
+    $salt = "Salt22CharactersOrMore";
+
+    $format_and_salt = $hash_format . $salt;
+
+    $hash = crypt($password_text, $format_and_salt);
+
+    return $hash;
+
+  }
+
 
 ?>

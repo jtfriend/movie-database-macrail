@@ -35,7 +35,7 @@
         <ul>
           <li><a href="manage_content.php">Manage Movies</a></li>
           <li><a href="manage_admin.php">Manage Admin</a></li>
-          <li><a href="logout.php">Logout</a></li>
+          <li><a href="login.php">Logout</a></li>
         </ul>
       </div>
     </div>

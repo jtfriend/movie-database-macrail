@@ -11,11 +11,14 @@
 
   $username = $_POST["username"];
   $password = $_POST["password"];
+
   $username = mysqli_real_escape_string($mysqli, $username);
   $password = mysqli_real_escape_string($mysqli, $password);
 
+  $hashed_password = passwordEncrypt($password);
+
   $query = "INSERT INTO admins (username, password)
-            VALUES ('{$username}', '{$password}')";
+            VALUES ('{$username}', '{$hashed_password}')";
   $result = mysqli_query($mysqli, $query);
   // Test if there is Database
   confirmQuery($result);

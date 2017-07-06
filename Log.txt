@@ -38,4 +38,8 @@ Started over writing some good files I wrote for another part of the system.
 Not good. Amended now but not great when time is a large factor.
 Learnt about redirection with headers and output buffering and how you can't
 have white space before it or have output buffering on.
-Created the admin CRUD. 
+Created the admin CRUD. Learnt password encryption, using blowfish,
+storing data in database as a hash. Created login with encryption.
+The system doesn't have much validation and plenty of holes I'm sure.
+There's no non-admin side of the system which isn't great. Plenty of time
+for tweaks tomorrow.
