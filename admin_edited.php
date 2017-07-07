@@ -16,7 +16,9 @@
   $username = mysqli_real_escape_string($mysqli, $username);
   $password = mysqli_real_escape_string($mysqli, $password);
 
-  $query = "UPDATE admins SET username = '{$username}', password = '{$password}'
+  $hashed_password = passwordEncrypt($password);
+
+  $query = "UPDATE admins SET username = '{$username}', password = '{$hashed_password}'
             WHERE id = {$id}";
   $result = mysqli_query($mysqli, $query);
   // Test if there is Database

@@ -42,4 +42,14 @@ Created the admin CRUD. Learnt password encryption, using blowfish,
 storing data in database as a hash. Created login with encryption.
 The system doesn't have much validation and plenty of holes I'm sure.
 There's no non-admin side of the system which isn't great. Plenty of time
-for tweaks tomorrow.
+for tweaks tomorrow. I've tried a branch, didn't work out (but worth it).
+Ordered a retrieve from the database in an order using mySQL.
+Started off using the database through the mySQL console, hadn't done
+that before.
+
+07/07
+
+Would have liked to use more JS for validation. Probably spent about 20-25 hrs
+on the project. You can have multiple usernames of the same type, bad.
+If I had more time I would have created a non-admin area where you could write
+a comment on your film of choice.

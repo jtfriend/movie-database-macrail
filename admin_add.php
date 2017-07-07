@@ -46,8 +46,8 @@
       <div id = "page">
         <h2>Add admin</h2>
         <form autocomplete="off" action="admin_added.php" id="add_admin" method ="post">
-          username: <input type="text" name="username" value="" autocomplete="off" /><br>
-          password: <input type="password" name="password" value="" autocomplete="off"/><br>
+          username: <input type="text" name="username" value="" autocomplete="off" required><br>
+          password: <input type="password" name="password" value="" autocomplete="off" required><br>
           <input type="submit" value="Submit"/>
         </form>
       </div>

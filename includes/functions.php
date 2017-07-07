@@ -21,7 +21,7 @@
   function findAllMovies()
   {
     global $mysqli;
-    $query = "SELECT * FROM movies";
+    $query = "SELECT * FROM movies ORDER BY title";
     $result = mysqli_query($mysqli, $query);
     // Test if there is Database
     confirmQuery($result);

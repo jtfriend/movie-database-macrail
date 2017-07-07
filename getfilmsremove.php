@@ -11,7 +11,7 @@
 // 2.Database Query
 $title = $_GET["title"];
 $title = mysqli_real_escape_string($mysqli, $title);
-echo "title" . $title;
+echo "<br>";
 $query = "SELECT * FROM movies WHERE title = '{$title}'";
 
 $result = mysqli_query($mysqli, $query);
@@ -38,6 +38,7 @@ while($row = mysqli_fetch_array($result)) {
   Age Rating: <input type="text" name="age_rating" value ="<?php echo $age_rating?>" disabled><br>
   <input type="hidden" name="id" value ="<?php echo $id?>"><br>
   <input type="submit" value="Delete movie">
+  <a href="manage_content.php">Cancel</a>
 </form>
 
 </body>

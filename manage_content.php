@@ -39,7 +39,6 @@
           <li><a href="content_remove.php">Delete movie</a></li>
           <li><a href="content_view.php">View all movies</a></li>
           <li><a href="admin.php">Admin menu</a></li>
-          <li><a href="logout.php">Logout</a></li>
         </ul>
       </div>
 
