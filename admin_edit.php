@@ -30,7 +30,7 @@ $result = mysqli_query($mysqli, $query);
 while($row = mysqli_fetch_array($result)) {
     //echo $row['title'];
     $username = $row['username'];
-    //$title = mysqli_real_escape_string($mysqli, $row['title']);
+    //$username = mysqli_real_escape_string($mysqli, $row['username']);
     //echo $row['genre'];
     $password = $row['password'];
     //echo $row['age_rating'];

@@ -38,7 +38,7 @@
         <form action="content_added.php" method ="post">
           Title: <input type="text" name="title" required><br>
           Genre: <input type="text" name="genre" required><br>
-          Age Rating: <input type="number" name="age_rating" required><br>
+          Age Rating: <input type="number" name="age_rating" min="0" required><br>
           <input type="submit" value="Submit">
         </form>
       </div>

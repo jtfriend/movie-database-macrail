@@ -35,7 +35,7 @@ while($row = mysqli_fetch_array($result)) {
 <form action="content_edited.php" method ="post">
   Title: <input type="text" name="title" value ="<?php echo $title?>" required><br>
   Genre: <input type="text" name="genre" value ="<?php echo $genre?>" required><br>
-  Age Rating: <input type="number" name="age_rating" value ="<?php echo $age_rating?>" required><br>
+  Age Rating: <input type="number" name="age_rating" min="0" value ="<?php echo $age_rating?>" required><br>
   <input type="hidden" name="id" value ="<?php echo $id?>"><br>
   <input type="submit" value="Submit changes">
   <a href="manage_content.php">Cancel</a>
