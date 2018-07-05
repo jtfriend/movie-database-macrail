@@ -1,0 +1,55 @@
+Movie Database Project for MacRail
+
+01/07/2017
+
+Started looking at what server and stack I will start to use.
+Decided on WAMPServer because that's what Lynda.com(where I'm
+learning PHP from) is using.
+
+03/07
+
+Gone through some basic WAMP stuff, installed everything
+and created a simple hello world program to test it, and it
+works. Skipped the general PHP learning process to MySQL
+to set up the database. Just refreshing things from a web
+project I did before.
+
+04/07
+
+Ideas:
+create a login for a admin to add or change movies in the Database
+create a login for normal uses who can search for movies and add comments
+JQuery, AJAX, CSS. but don't waste time on CSS
+
+To be able to see what films certain actors are in
+
+05/07
+
+Created add and edit functionality to the website, questioning now how
+much time I have left to complete the project within the deadline.
+Making good use of git and happy with how it's going. Hoping that not
+having a search feature won't hamper me too much. Hope to complete remove
+and login functionality tomorrow.
+
+
+06/ 07
+
+Started over writing some good files I wrote for another part of the system.
+Not good. Amended now but not great when time is a large factor.
+Learnt about redirection with headers and output buffering and how you can't
+have white space before it or have output buffering on.
+Created the admin CRUD. Learnt password encryption, using blowfish,
+storing data in database as a hash. Created login with encryption.
+The system doesn't have much validation and plenty of holes I'm sure.
+There's no non-admin side of the system which isn't great. Plenty of time
+for tweaks tomorrow. I've tried a branch, didn't work out (but worth it).
+Ordered a retrieve from the database in an order using mySQL.
+Started off using the database through the mySQL console, hadn't done
+that before.
+
+07/07
+
+Would have liked to use more JS for validation. Probably spent about 20-25 hrs
+on the project. You can have multiple usernames of the same type, bad.
+If I had more time I would have created a non-admin area where you could write
+a comment on your film of choice.
